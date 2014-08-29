@@ -1,0 +1,29 @@
+Source: bernhard
+Maintainer: Eugene Alekseev <ealekseev@clodo.ru>
+Section: python
+Priority: optional
+Build-Depends: python-setuptools (>= 0.6b3), python-all (>= 2.6.6-3), debhelper (>= 7)
+Standards-Version: 3.9.1
+
+Package: python-bernhard
+Architecture: all
+Depends: ${misc:Depends}, ${python:Depends} python-protobuf
+Description: Python client for Riemann
+ # Bernhard
+ .
+ A simple Python client for [Riemann](http://github.com/aphyr/riemann). Usage:
+ .
+     import bernhard
+ .
+     c = bernhard.Client()
+     c.send({'host': 'myhost.foobar.com', 'service': 'myservice', 'metric': 12})
+     q = c.query('true')
+ .
+ ## Installing
+ .
+     pip install bernhard
+ .
+ You may encounter issues with the `protobuf` dependency; if so, just run `pip
+ install protobuf` manually, then `pip install bernhard`.
+ .
+ .
