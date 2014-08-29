@@ -1,4 +1,8 @@
-bernhard (0.1.1-1) unstable; urgency=low
+bernhard (0.1.1-2) unstable; urgency=low
+
+  * Remove stale dependency
+
+ -- Eugene Alekseev <ealekseev@clodo.ru>  Fri, 29 Aug 2014 15:10:00 +0400
 
   * source package automatically created by stdeb 0.6.0+git
 

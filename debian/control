@@ -7,7 +7,7 @@ Standards-Version: 3.9.1
 
 Package: python-bernhard
 Architecture: all
-Depends: ${misc:Depends}, ${python:Depends} python-protobuf
+Depends: ${misc:Depends}, ${python:Depends}
 Description: Python client for Riemann
  # Bernhard
  .
